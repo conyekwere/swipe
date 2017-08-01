@@ -24,12 +24,36 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="Zew-IG-f6Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="6Lx-mi-1Ob">
+                                <rect key="frame" x="201" y="28" width="158" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Vbu-6B-Onr"/>
+                                    <constraint firstAttribute="width" constant="160" id="eBt-XV-K4j"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="jVI-Tc-cCy">
+                                <rect key="frame" x="0.0" y="487" width="375" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="sMs-qL-SbG"/>
+                                    <constraint firstAttribute="height" constant="180" id="xTV-6K-VbB"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-l7-Njy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jVI-Tc-cCy" secondAttribute="trailing" id="CaO-zn-sD9"/>
+                            <constraint firstItem="jVI-Tc-cCy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JJK-VB-MTn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7J7-l7-Njy" secondAttribute="bottom" id="UkC-uf-1bS"/>
                             <constraint firstItem="Zew-IG-f6Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VC9-PW-QD1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jVI-Tc-cCy" secondAttribute="bottom" id="Zef-t1-hOw"/>
                             <constraint firstItem="Zew-IG-f6Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e8q-6M-VEG"/>
+                            <constraint firstItem="7J7-l7-Njy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fdr-Qw-p3U"/>
+                            <constraint firstItem="7J7-l7-Njy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lnQ-qt-O4R"/>
                             <constraint firstAttribute="trailing" secondItem="Zew-IG-f6Q" secondAttribute="trailing" id="muH-g4-Koz"/>
+                            <constraint firstAttribute="trailing" secondItem="7J7-l7-Njy" secondAttribute="trailing" id="pMx-W1-Px2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zew-IG-f6Q" secondAttribute="bottom" id="r2Q-TQ-5tA"/>
                         </constraints>
                     </view>
@@ -40,6 +64,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Mountains" width="375" height="100"/>
         <image name="Sky" width="375" height="667"/>
+        <image name="Sun" width="53" height="53"/>
     </resources>
 </document>
